@@ -1,5 +1,5 @@
 {
-  "name": "joker",
+  "name": "joker.js",
   "version": "1.0.0",
   "description": "Wrapper pour Blague.xyz (blagues aléatoires, blague du jour, etc...)",
   "main": "index.js",
