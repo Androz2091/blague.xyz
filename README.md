@@ -1,13 +1,13 @@
 # Joker
 
-Joker est un module vous permettant d'obtenir facilement des blagues depuis [Blague.xyz](https://blague.xyz) API.
+Joker.js est un module vous permettant d'obtenir facilement des blagues depuis [Blague.xyz](https://blague.xyz) API.
 
 🇫🇷 Pour le moment, seules des blagues en français sont disponibles !
 
 ## Installation
 
 ```
-$ npm install --save joker
+$ npm install --save joker.js
 ```
 
 ## Exemple d'utilisation
