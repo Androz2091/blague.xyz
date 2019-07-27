@@ -13,7 +13,7 @@ $ npm install --save joker
 ## Exemple d'utilisation
 
 ```js
-const Joker = require("./joker.js/index");
+const Joker = require("joker.js");
 const joker = new Joker({
     token: "Optional API token"
 });
