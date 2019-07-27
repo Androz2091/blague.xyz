@@ -1,0 +1,29 @@
+{
+  "name": "joker",
+  "version": "1.0.0",
+  "description": "Wrapper pour Blague.xyz (blagues aléatoires, blague du jour, etc...)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Androz2091/joker.js.git"
+  },
+  "keywords": [
+    "joke",
+    "blague",
+    "blague.xyz",
+    "random",
+    "joke",
+    "joker",
+    "joker.js",
+    "français"
+  ],
+  "author": "Androz2091",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Androz2091/joker.js/issues"
+  },
+  "homepage": "https://github.com/Androz2091/joker.js#readme"
+}
