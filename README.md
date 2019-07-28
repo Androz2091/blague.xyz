@@ -37,7 +37,7 @@ joker.get(10).then((joke) => {
     console.log(joke.answer); // Qu'elle s'est plantée
 });
 
-console.log(joker.version); // 1.0.0
+console.log(joker.version); // 1.0.1
 ```
 
 ## Liens
@@ -45,5 +45,5 @@ console.log(joker.version); // 1.0.0
 * [Site](https://blague.xyz)
 * [Documentation](https://docs.blague.xyz)
 * [Discord](https://discord.gg/CJgNcJN)
-* [Github (source)](https://github.com/Androz2091/joker.js)
-* [NPM](https://npmjs/package/joker)
+* [Github (source)](https://github.com/Androz2091/blague.xyz)
+* [NPM](https://npmjs/package/blague.xyz)
