@@ -10,10 +10,18 @@ class Joke {
 
     /**
      * Returns the joke text instead of the Joke object.
-     * @returns String
+     * @returns {string}
      */
     toString(){
         return `${this.question}\n${this.answer}`;
+    }
+
+    /**
+     * Returns the joke text using Discord spoilers instead of the Joke object.
+     * @returns {string}
+     */
+    toDiscordSpoils(){
+        return `${this.question}\n\n||${this.answer}||`;
     }
 
 };

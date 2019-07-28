@@ -23,6 +23,7 @@ joker.random().then((joke) => {
     console.log(joke.question); // Que dit une feuille quand elle tombe dans l'eau ?
     console.log(joke.answer); // J'ai papier
     console.log(joke.toString()); // Que dit une feuille quand elle tombe dans l'eau ?\nJ'ai papier
+    console.log(joke.toDiscordSpoils()); // Que dit une feuille quand elle tombe dans l'eau ?\n\n||J'ai papier||
 });
 
 // Obtenir la blague du jour
@@ -37,7 +38,7 @@ joker.get(10).then((joke) => {
     console.log(joke.answer); // Qu'elle s'est plantée
 });
 
-console.log(joker.version); // 1.0.1
+console.log(joker.version); // 1.0.2
 ```
 
 ## Liens
