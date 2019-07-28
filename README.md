@@ -38,7 +38,7 @@ joker.get(10).then((joke) => {
     console.log(joke.answer); // Qu'elle s'est plantée
 });
 
-console.log(joker.version); // 1.0.2
+console.log(joker.version); // 1.0.3
 ```
 
 ## Liens

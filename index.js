@@ -39,7 +39,16 @@ class Joker {
      * @returns {Promise<Object>}
     */
     async _get(path){
-        let options = (this.token ? { headers: { "Authorization": this.token } } : null);
+        let options = (this.token ?
+            {
+                method: "get",
+                headers: { "Authorization": this.token }
+            }:
+            {
+                method: "get",
+                headers: {}
+            }
+        );
         let res = await fetch(`${this.baseURL}/${path}`, options);
         let data = await res.json();
         return data;
