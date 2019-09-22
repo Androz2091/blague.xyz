@@ -4,8 +4,9 @@ version = require("./package.json").version;
 class Joke {
 
     constructor(joke){
-        this.question = joke.jokequestion;
-        this.answer = joke.jokereponse;
+        this.question = joke.question;
+        this.answer = joke.answer;
+        this.id = joke.id;
     }
 
     /**
@@ -60,7 +61,7 @@ class Joker {
     */
     async random(){
         let data = await this._get("random");
-        return new Joke(data);
+        return new Joke(data.joke);
     }
 
     /**
@@ -69,7 +70,7 @@ class Joker {
     */
     async daily(){
         let data = await this._get("day");
-        return new Joke(data);
+        return new Joke(data.joke);
     }
 
     /**
@@ -79,7 +80,7 @@ class Joker {
     */
     async get(id){
         let data = await this._get(id);
-        return new Joke(data);
+        return new Joke(data.joke);
     }
 
     /**
