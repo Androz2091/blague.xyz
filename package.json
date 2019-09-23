@@ -20,6 +20,13 @@
     "français"
   ],
   "author": "Androz2091",
+  "contributors": [
+    {
+      "name": "Skiz54",
+      "email": "skizcontact0@gmail.com",
+      "url": "https://github.com/Skiz54"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Androz2091/blague.xyz/issues"
