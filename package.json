@@ -1,6 +1,6 @@
 {
   "name": "blague.xyz",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Wrapper pour Blague.xyz (blagues aléatoires, blague du jour, etc...)",
   "main": "lib/index.js",
   "scripts": {
