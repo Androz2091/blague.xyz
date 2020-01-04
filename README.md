@@ -11,6 +11,10 @@ Blague.xyz is a package to get jokes and FML easily from the [Blague.xyz](https:
 $ npm install --save blague.xyz
 ```
 
+## API Token
+
+You need an API Key to send request to the Blague.xyz API. Click [here](https://blague.xyz/) to get one.
+
 ## Usage example
 
 ### Jokes/Blague
