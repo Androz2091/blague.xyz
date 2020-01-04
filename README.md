@@ -71,9 +71,9 @@ joker.getVDM("normal", "en").then((fml) => {
     console.log(fml.content); // Today, a little girl asked me how I could be so fat and still have small boobs.
 });
 
-// Gets a joke with its ID
+// Gets a vdm with its ID
 joker.listVDM().then((list) => {
-    console.log(list); // [ {joke}, {joke}, {joke} ]
+    console.log(list); // [ {vdm}, {vdm}, {vdm} ]
 });
 ```
 
