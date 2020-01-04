@@ -1,8 +1,9 @@
 # Blague.xyz
 
-Blague.xyz est un module vous permettant d'obtenir facilement des blagues depuis [Blague.xyz](https://blague.xyz) API.
+Blague.xyz is a package to get jokes and FML easily from the [Blague.xyz](https://blague.xyz) API.
 
-🇫🇷 Pour le moment, seules des blagues en français sont disponibles !
+🇬🇧 Jokes/FML in english are supported
+🇫🇷 Blagues/Vie de merde en français sont supportées
 
 ## Installation
 
@@ -10,15 +11,17 @@ Blague.xyz est un module vous permettant d'obtenir facilement des blagues depuis
 $ npm install --save blague.xyz
 ```
 
-## Exemple d'utilisation
+## Usage example
+
+### Jokes/Blague
 
 ```js
 const Client = require("blague.xyz");
 const joker = new Client("Optional API token", {
-    defaultLang: "fr" 
+    defaultLang: "fr" // The default language for jokes and fml
 });
 
-// Gets a random joke
+// Gets a random joke. As no language is specified, it will use the default language of the client, "fr" in our case. 
 joker.randomJoke().then((joke) => {
     console.log(joke.question); // Que dit une feuille quand elle tombe dans l'eau ?
     console.log(joke.answer); // J'ai papier
@@ -27,22 +30,56 @@ joker.randomJoke().then((joke) => {
     console.log(joke.id); // 71
 });
 
-// Gets an english joke
+// Gets an english joke. If you specify a language, it will use it instead of the default language.
 joker.dailyJoke("en").then((joke) => {
     console.log(joke.question); // What is the only dog you can eat ?
     console.log(joke.answer); // A Hot Dog
 });
 
 // Gets a joke with its ID
-joker.get(10, "fr").then((joke) => {
+joker.getJoke(10, "fr").then((joke) => {
     console.log(joke.question); // Que dit une fleur qui a eu zéro à un contrôle ?
     console.log(joke.answer); // Qu'elle s'est plantée
 });
+
+// Gets the joke list. [premium only]
+joker.listJoke().then((list) => {
+    console.log(list); // [ {joke}, {joke}, {joke} ]
+});
 ```
 
-## Liens
+### FML/VDM
 
-* [Site](https://blague.xyz)
+```js
+const Client = require("blague.xyz");
+const joker = new Client("Optional API token", {
+    defaultLang: "fr" // The default language for jokes and fml
+});
+
+// Gets a random vdm. As no language is specified, it will use the default language of the client, "fr" in our case. 
+joker.randomVDM().then((vdm) => {
+    console.log(vdm.content); // Aujourd'hui, j'ai acheté une voiture d'occasion à un de mes amis. Après avoir ramené la voiture à la maison et l'avoir inspectée, j'ai trouvé l'une des boucles d'oreilles de ma femme sur le siège arrière.
+});
+
+// Gets a random vdm with type "hot".
+joker.randomVDM("hot").then((vdm) => {
+    console.log(vdm.content); // Censured. Use the package to get some hot vdm...
+});
+
+// Gets an english fml. If you specify a language, it will use it instead of the default language.
+joker.getVDM("normal", "en").then((fml) => {
+    console.log(fml.content); // Today, a little girl asked me how I could be so fat and still have small boobs.
+});
+
+// Gets a joke with its ID
+joker.listVDM().then((list) => {
+    console.log(list); // [ {joke}, {joke}, {joke} ]
+});
+```
+
+## Links
+
+* [Website](https://blague.xyz)
 * [Documentation](https://docs.blague.xyz)
 * [Discord](https://discord.gg/CJgNcJN)
 * [Github (source)](https://github.com/Androz2091/blague.xyz)
