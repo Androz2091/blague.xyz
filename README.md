@@ -17,7 +17,7 @@ $ npm install --save blague.xyz
 
 ```js
 const Client = require("blague.xyz");
-const joker = new Client("Optional API token", {
+const joker = new Client("API token", {
     defaultLang: "fr" // The default language for jokes and fml
 });
 
@@ -52,7 +52,7 @@ joker.listJoke().then((list) => {
 
 ```js
 const Client = require("blague.xyz");
-const joker = new Client("Optional API token", {
+const joker = new Client("API token", {
     defaultLang: "fr" // The default language for jokes and fml
 });
 
