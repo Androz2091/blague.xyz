@@ -13,13 +13,13 @@ $ npm install --save blague.xyz
 ## Exemple d'utilisation
 
 ```js
-const Joker = require("blague.xyz");
-const joker = new Joker({
-    token: "Optional API token"
+const Client = require("blague.xyz");
+const joker = new Client("Optional API token", {
+    defaultLang: "fr" 
 });
 
-// Obtenir une blague aléatoire
-joker.random().then((joke) => {
+// Gets a random joke
+joker.randomJoke().then((joke) => {
     console.log(joke.question); // Que dit une feuille quand elle tombe dans l'eau ?
     console.log(joke.answer); // J'ai papier
     console.log(joke.toString()); // Que dit une feuille quand elle tombe dans l'eau ?\nJ'ai papier
@@ -27,19 +27,17 @@ joker.random().then((joke) => {
     console.log(joke.id); // 71
 });
 
-// Obtenir la blague du jour
-joker.daily().then((joke) => {
-    console.log(joke.question); // Comment appelle-t-on un chat tombé dans un pot de peinture le jour de Noël ?
-    console.log(joke.answer); // Un chat peint de Noël
+// Gets an english joke
+joker.dailyJoke("en").then((joke) => {
+    console.log(joke.question); // What is the only dog you can eat ?
+    console.log(joke.answer); // A Hot Dog
 });
 
-// Obtenir une blague avec son ID
-joker.get(10).then((joke) => {
+// Gets a joke with its ID
+joker.get(10, "fr").then((joke) => {
     console.log(joke.question); // Que dit une fleur qui a eu zéro à un contrôle ?
     console.log(joke.answer); // Qu'elle s'est plantée
 });
-
-console.log(joker.version); // 1.0.6
 ```
 
 ## Liens
