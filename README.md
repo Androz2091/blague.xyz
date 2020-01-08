@@ -20,7 +20,7 @@ You need an API Key to send request to the Blague.xyz API. Click [here](https://
 ### Jokes/Blague
 
 ```js
-const Client = require("blague.xyz");
+const { Client } = require("blague.xyz");
 const joker = new Client("API token", {
     defaultLang: "fr" // The default language for jokes and fml
 });
